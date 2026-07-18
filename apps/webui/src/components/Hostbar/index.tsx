@@ -1,10 +1,10 @@
 import { createSignal, onMount } from "solid-js";
 import "./hostbar.css";
-import { ComingIpData, Host, IPAddress } from "../../lib/types";
-import { setDeleteButtonVisible, setInternalStore } from "../../Store/store";
-import { setNotifyError } from "../../Store/store";
-import { setShowNotification } from "../../Store/store";
-import { checkedItem,setCheckedItem } from "../../Store/store";
+import { ComingIpData, Host, IPAddress } from "@/lib/types";
+import { setDeleteButtonVisible, setInternalStore } from "@/store/store";
+import { setNotifyError } from "@/store/store";
+import { setShowNotification } from "@/store/store";
+import { checkedItem,setCheckedItem } from "@/store/store";
 
 export const Hostbar = (props: ComingIpData) => {
   // create a state for ip that is init by prop.ip

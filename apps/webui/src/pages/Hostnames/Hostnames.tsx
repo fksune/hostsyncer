@@ -1,7 +1,7 @@
-import { Hostbar } from "../../Components/Hostbar/Hostbar";
+import { Hostbar } from "@/components/Hostbar";
 import "./hostname.css";
-import { IPAddress, Host, IPStore } from "../../lib/types";
-import { Button } from "../../Components/Button/Button";
+import { IPAddress, Host, IPStore } from "@/lib/types";
+import { Button } from "@/components/Button";
 import {
   checkedItem,
   deleteButtonVisibile,
@@ -11,10 +11,10 @@ import {
   setDeleteButtonVisible,
   setInternalStore,
   setSelectAll,
-} from "../../Store/store";
-import { showNotification, setShowNotification } from "../../Store/store";
-import { NotificationPopup } from "../../Components/Notify/NotificationPopup";
-import { NotifyError } from "../../Store/store";
+} from "@/store/store";
+import { showNotification, setShowNotification } from "@/store/store";
+import { NotificationPopup } from "@/components/NotificationPopup";
+import { NotifyError } from "@/store/store";
 
 // start the component
 export const Hostnames = () => {

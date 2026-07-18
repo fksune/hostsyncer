@@ -1,5 +1,5 @@
 import { createStore } from "solid-js/store";
-import { IPAddress,IPStore,Host } from "../lib/types";
+import { IPAddress,IPStore,Host } from "@/lib/types";
 import { createSignal } from "solid-js";
 
 // create a global store for Ip address and hostname

@@ -1,4 +1,4 @@
-import { ToggleButton } from "../../Components/ToggleButton/ToggleButton";
+import { ToggleButton } from "@/components/ToggleButton";
 import {
   isKeyButtonClicked,
   IsMasterNodeConfig,
@@ -6,7 +6,7 @@ import {
   setMasterNodeConfig,
   setTheme,
   theme,
-} from "../../Store/store";
+} from "@/store/store";
 import "./Settings.css";
 
 export const Settings = () => {

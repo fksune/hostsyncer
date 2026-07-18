@@ -3,13 +3,13 @@ import { render } from 'solid-js/web';
 import { Route, Router } from "@solidjs/router";
 import 'solid-devtools';
 
-import "./index.css";
-import App from './App';
+import "@/index.css";
+import App from '@/App';
 
-import { Hostnames } from "./pages/Hostnames/Hostnames";
-import { Settings } from "./pages/Settings/Settings";
-import { Analytics } from "./pages/Analytics";
-import { Error } from "./pages/Error";
+import { Hostnames } from "@/pages/Hostnames/Hostnames";
+import { Settings } from "@/pages/Settings/Settings";
+import { Analytics } from "@/pages/Analytics";
+import { NotFound } from "@/pages/NotFound";
 
 const root = document.getElementById('root');
 
@@ -25,7 +25,7 @@ render(
       <Route path={"/"} component={Hostnames} />
       <Route path={"/setting"} component={Settings} />
       <Route path={"/analytics"} component={Analytics} />
-      <Route path="*paramName" component={Error} />
+      <Route path="*paramName" component={NotFound} />
     </Router>
   ),
   root!
