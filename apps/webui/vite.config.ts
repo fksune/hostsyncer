@@ -15,5 +15,6 @@ export default defineConfig({
   },
   build: {
     target: 'esnext',
+    assetsInlineLimit: 67584, // 66Kb for font inlining
   },
 });
